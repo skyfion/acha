@@ -13,7 +13,7 @@
                        #"public/react-.*"]
 
   :dependencies [
-    [org.clojure/clojure "1.7.0-RC1"]
+    [org.clojure/clojure "1.8.0"]
     [org.clojure/tools.logging "0.3.1"]
     [org.clojure/tools.cli "0.3.1"]
     [ch.qos.logback/logback-classic "1.1.3"]
@@ -27,10 +27,11 @@
     [clj-jgit "0.8.10" :exclusions [org.clojure/core.memoize]]
 
     [org.clojure/java.jdbc "0.3.7"]
-    [org.xerial/sqlite-jdbc "3.8.10.1"]
+    [org.xerial/sqlite-jdbc "3.42.0.0"]
     [com.mchange/c3p0 "0.9.5"]
     
-    [org.clojure/clojurescript "0.0-3308"]
+    [org.clojure/clojurescript "1.11.60"]
+    [javax.xml.bind/jaxb-api "2.3.0"]
 
     [rum "0.2.6" :exclusions [cljsjs/react]]
     [cljsjs/react-with-addons "0.12.2-7"]
@@ -43,7 +44,7 @@
 
   :plugins [
     [lein-ring "0.9.4"]
-    [lein-cljsbuild "1.0.6"]
+    [lein-cljsbuild "1.1.8"]
   ]
   :clean-targets ^{:protect false} [
     "target"
